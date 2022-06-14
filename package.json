@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "workspaces": [
+        "svelte-todomvc",
+        "vue-todomvc",
+        "react-todomvc",
+        "preact-todomvc",
+        "solid-todomvc"
+    ],
+    "scripts": {
+        "benchmark": "npm run build --workspaces && node postbuild.mjs"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "dependencies": {
+        "chalk": "^5.0.1",
+        "pretty-bytes": "^6.0.0"
+    }
+}
